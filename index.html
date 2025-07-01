@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .intro-container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 36px;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="intro-container">
+        <h1>Welcome to My Website!</h1>
+        <p>This is a simple introduction page.</p>
+        <button onclick="changeContent()">Click to Learn More</button>
+    </div>
+
+    <script>
+        function changeContent() {
+            document.querySelector('.intro-container h1').innerText = "Thank You for Visiting!";
+            document.querySelector('.intro-container p').innerText = "We hope you find what you're looking for.";
+        }
+    </script>
+
+</body>
+</html>
